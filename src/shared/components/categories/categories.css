@@ -1,0 +1,45 @@
+/* Ajustes para CategorySlider - Asegúrate de que las clases no choquen con otros sliders */
+
+/* 1. Flechas de navegación: Reducir tamaño y hacer más discretas */
+
+/* Selecciona los botones de navegación de Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  /* ¡Importante! Sobrescribe el tamaño predeterminado */
+  width: 30px !important; 
+  height: 30px !important;
+  /* Personalizar apariencia */
+  color: #1f2937 !important; /* text-gray-800 */
+  background-color: #f3f4f699 !important; /* Fondo semitransparente */
+  border-radius: 50% !important;
+  /* Ajusta su posición para que estén más cerca del centro/superior de las cards */
+  top: 40% !important; 
+  margin-top: 0 !important; /* Resetear margin-top si Swiper lo añade */
+}
+
+/* 2. Tamaño del icono (la flecha real dentro del botón) */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important; /* Reduce el tamaño del icono de la flecha */
+  font-weight: bold !important;
+}
+
+/* 3. Paginación (puntos): Mover debajo de las tarjetas */
+
+/* Selecciona el contenedor de la paginación */
+.swiper-pagination {
+  /* Mueve la paginación hacia abajo y asegura su posición */
+  position: relative !important; /* A veces es necesario para que bottom funcione */
+  bottom: -20px !important; /* Mueve los puntos 20px debajo del slider */
+  padding-bottom: 0px !important; 
+}
+
+/* 4. Estilo de los puntos */
+.swiper-pagination-bullet {
+  background: #9ca3af !important; /* color inactivo */
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #dc2626 !important; /* bg-red-600 para el punto activo */
+}
