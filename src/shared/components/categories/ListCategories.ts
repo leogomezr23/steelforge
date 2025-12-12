@@ -14,7 +14,7 @@ export const ListCategories = [
         id: 0,
         title: "Servicio de Corte",
         image: Cortes,
-        description: "Transformamos tu material a la medida. Precisión en corte y aplanado de bobinas al instante.",
+        description: "",
     },
      {
         id: 1,
