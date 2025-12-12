@@ -68,10 +68,10 @@ export const CategorySlider: FC = () => {
         return `-${moveAmount}px`;
     };
 
-    const goToPage = (pageIndex: number): void => {
-        const newIndex = pageIndex * 1; 
-        setCurrentIndex(Math.min(newIndex, maxIndex));
-    }
+    // const goToPage = (pageIndex: number): void => {
+    //     const newIndex = pageIndex * 1; 
+    //     setCurrentIndex(Math.min(newIndex, maxIndex));
+    // }
 
 
     const openModal = (category: Category): void => {
