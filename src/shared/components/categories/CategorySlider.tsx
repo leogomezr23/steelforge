@@ -1,5 +1,5 @@
 // CategorySlider.tsx
-import React, { useState, useEffect, type FC } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import { Modal } from './ModalList'; 
 import { useWindowSize } from './hook/useWindowSize'; 
 
@@ -166,7 +166,7 @@ export const CategorySlider: FC = () => {
                     </button>
                 )}
             </div>
-            {totalCategories > cardsPerView && (
+            {/* {totalCategories > cardsPerView && (
                 <div className="flex justify-center mt-6 space-x-2">
                     {Array.from({ length: Math.ceil(totalCategories / cardsPerView) }).map((_, index: number) => {
                         const pageStartIndex = index * 1;
@@ -184,7 +184,7 @@ export const CategorySlider: FC = () => {
                         );
                     })}
                 </div>
-            )}
+            )} */}
             <Modal 
                 isOpen={isModalOpen} 
                 onClose={closeModal}
