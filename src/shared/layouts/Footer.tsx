@@ -30,7 +30,7 @@ export const Footer = () => {
           </div>
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">
-              Accesorios
+              Fabrica de
             </h4>
             <ul className="space-y-2 text-sm">
               {accessories.map((serviceName, index) => (
@@ -46,7 +46,7 @@ export const Footer = () => {
           </div>
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">
-              Computadores
+              Ventas
             </h4>
             <ul className="space-y-2 text-sm">
               {computers.map((serviceName, index) => (
@@ -63,11 +63,18 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">
               Contáctanos
             </h4>
+            <ul>
+              <li className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200 cursor-pointer">WhatsApp</li>
+              <li className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200 cursor-pointer">Instagram</li>
+              <li className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200 cursor-pointer">Facebook</li>
+              <li className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200 cursor-pointer">Email</li>
+              <li className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200 cursor-pointer">Línea Fija</li>
+            </ul>
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500 space-y-1">
           <p>
-            © {new Date().getFullYear()} High Tecnology. Todos los derechos
+            © {new Date().getFullYear()} Central de Cortes y Servicios S.A.S. Todos los derechos
             reservados.
           </p>
           <p className="text-gray-400">
